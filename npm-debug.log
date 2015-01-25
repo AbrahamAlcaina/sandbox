@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'yo',
+1 verbose cli   '.g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'yo', null ]
+6 verbose cache add name=undefined spec="yo" args=["yo",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'yo',
+7 verbose parsed url   path: 'yo',
+7 verbose parsed url   href: 'yo' }
+8 verbose cache add [ '.g', null ]
+9 verbose cache add name=undefined spec=".g" args=[".g",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: '.g',
+10 verbose parsed url   path: '.g',
+10 verbose parsed url   href: '.g' }
+11 silly lockFile c41975d1-yo yo
+12 verbose lock yo C:\Users\Abraham\AppData\Roaming\npm-cache\c41975d1-yo.lock
+13 silly lockFile 4ac975c6-g .g
+14 verbose lock .g C:\Users\Abraham\AppData\Roaming\npm-cache\4ac975c6-g.lock
+15 silly lockFile c41975d1-yo yo
+16 silly lockFile c41975d1-yo yo
+17 silly lockFile 4ac975c6-g .g
+18 silly lockFile 4ac975c6-g .g
+19 verbose addNamed [ 'yo', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile d937c28e-yo yo@
+22 verbose lock yo@ C:\Users\Abraham\AppData\Roaming\npm-cache\d937c28e-yo.lock
+23 error addLocal Could not install .g
+24 silly addNameRange { name: 'yo', range: '*', hasData: false }
+25 verbose request where is /yo
+26 verbose request registry https://registry.npmjs.org/
+27 verbose request id 2240e269a6b9981b
+28 verbose url raw /yo
+29 verbose url resolving [ 'https://registry.npmjs.org/', './yo' ]
+30 verbose url resolved https://registry.npmjs.org/yo
+31 verbose request where is https://registry.npmjs.org/yo
+32 info trying registry request attempt 1 at 20:02:23
+33 verbose etag "7NVY7SEMM8X45ENYL42C1VEWC"
+34 http GET https://registry.npmjs.org/yo
+35 http 304 https://registry.npmjs.org/yo
+36 silly registry.get cb [ 304,
+36 silly registry.get   { date: 'Sun, 25 Jan 2015 19:02:29 GMT',
+36 silly registry.get     server: 'Apache',
+36 silly registry.get     via: '1.1 varnish',
+36 silly registry.get     'last-modified': 'Sun, 25 Jan 2015 19:02:29 GMT',
+36 silly registry.get     'cache-control': 'max-age=60',
+36 silly registry.get     etag: '"7NVY7SEMM8X45ENYL42C1VEWC"',
+36 silly registry.get     age: '0',
+36 silly registry.get     'x-served-by': 'cache-ams4137-AMS',
+36 silly registry.get     'x-cache': 'HIT',
+36 silly registry.get     'x-cache-hits': '1',
+36 silly registry.get     'x-timer': 'S1422212549.140211,VS0,VE160',
+36 silly registry.get     vary: 'Accept',
+36 silly registry.get     'content-length': '0',
+36 silly registry.get     'keep-alive': 'timeout=10, max=50',
+36 silly registry.get     connection: 'Keep-Alive' } ]
+37 verbose etag https://registry.npmjs.org/yo from cache
+38 silly addNameRange number 2 { name: 'yo', range: '*', hasData: true }
+39 silly addNameRange versions [ 'yo',
+39 silly addNameRange   [ '1.1.0',
+39 silly addNameRange     '1.1.1',
+39 silly addNameRange     '1.1.2',
+39 silly addNameRange     '1.2.0',
+39 silly addNameRange     '1.2.1',
+39 silly addNameRange     '1.3.0',
+39 silly addNameRange     '1.3.2',
+39 silly addNameRange     '1.3.3' ] ]
+40 verbose addNamed [ 'yo', '1.3.3' ]
+41 verbose addNamed [ '1.3.3', '1.3.3' ]
+42 silly lockFile 68164736-yo-1-3-3 yo@1.3.3
+43 verbose lock yo@1.3.3 C:\Users\Abraham\AppData\Roaming\npm-cache\68164736-yo-1-3-3.lock
+44 silly lockFile 68164736-yo-1-3-3 yo@1.3.3
+45 silly lockFile 68164736-yo-1-3-3 yo@1.3.3
+46 silly lockFile d937c28e-yo yo@
+47 silly lockFile d937c28e-yo yo@
+48 error Error: ENOENT, stat 'C:\Users\Abraham\Documents\sandbox\.g'
+49 error If you need help, you may report this *entire* log,
+49 error including the npm and node versions, at:
+49 error     <http://github.com/npm/npm/issues>
+50 error System Windows_NT 6.2.9200
+51 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "yo" ".g"
+52 error cwd C:\Users\Abraham\Documents\sandbox
+53 error node -v v0.10.35
+54 error npm -v 1.4.28
+55 error path C:\Users\Abraham\Documents\sandbox\.g
+56 error code ENOENT
+57 error errno 34
+58 verbose exit [ 34, true ]
