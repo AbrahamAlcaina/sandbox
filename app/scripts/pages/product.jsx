@@ -1,6 +1,6 @@
 import React from 'react';
 
-var Info = React.createClass({
+var Product = React.createClass({
 
   render() {
     return (
@@ -17,4 +17,4 @@ var Info = React.createClass({
 
 });
 
-module.exports = Info;
+module.exports = Product;
