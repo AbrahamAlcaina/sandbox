@@ -1,12 +1,13 @@
 import React from 'react';
 import ItemList from '../components/itemList.jsx';
+import SearchBoxBody from '../components/searchBoxBody.jsx';
 
 var Home = React.createClass({
 
   render() {
     return (
       <div>
-        <h1>Home Area</h1>
+      	<SearchBoxBody/>
         <ItemList />
       </div>
     );

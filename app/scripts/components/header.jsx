@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SearchboxHeader from './searchboxheader.jsx';
 var Header = React.createClass({
 
   render() {
@@ -14,6 +14,7 @@ var Header = React.createClass({
                     </a>
                 </div>
             </div>
+            <SearchboxHeader />
         </div>      
     );
   }
