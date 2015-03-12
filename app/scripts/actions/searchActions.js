@@ -1,6 +1,6 @@
 'use strict';
 
-import Reflux from 'Reflux';
+import Reflux from 'reflux';
 
 const searchActions = Reflux.createActions([
 	'search'

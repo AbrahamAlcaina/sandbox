@@ -2,7 +2,6 @@
 
 import React from 'react';
 import ItemStore from '../stores/itemStore';
-import ItemActions from '../actions/itemActions';
 
 const ItemList = React.createClass({
 
@@ -15,8 +14,7 @@ const ItemList = React.createClass({
   },
 
   componentDidMount() {
-    this.unsubscribe = ItemStore.listen(this.onStatusChange);
-    ItemActions.loadItems();
+    this.unsubscribe = ItemStore.listen(this.onStatusChange);    
   },
 
   componentWillUnmount() {

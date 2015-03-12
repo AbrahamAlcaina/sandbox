@@ -1,38 +1,30 @@
 'use strict';
 
 import Reflux from 'reflux';
+import request from 'superagent';
 import ItemActions from '../actions/itemActions';
+import searchActions from '../actions/searchActions';
 
 const ItemStore = Reflux.createStore({
 
     init() {
             this.items = [];
-
             this.listenTo(ItemActions.loadItems, this.loadItems);
             this.listenTo(ItemActions.loadItemsSuccess, this.loadItemsSuccess);
             this.listenTo(ItemActions.loadItemsError, this.loadItemsError);
+            this.listenTo(searchActions.search, this.onSearch)
         },
 
-        loadItems() {
-            this.trigger({
-                loading: true
-            });
-        },
-
-        loadItemsSuccess(items) {
-            this.items = items;
-
-            this.trigger({
-                items: this.items,
-                loading: false
-            });
-        },
-
-        loadItemsError(error) {
-            this.trigger({
-                error: error,
-                loading: false
-            });
+        onSearch(query) {
+            const url  = '//traze.es/api/search?text=' + query 
+            request
+                .get(url)
+                .end((res)=>{
+                    console.debug(res);
+                    this.trigger({
+                        items: res
+                    });
+                });
         }
 
 });
