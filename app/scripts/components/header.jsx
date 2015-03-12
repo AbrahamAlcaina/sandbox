@@ -1,9 +1,10 @@
+'use strict';
+
 import React from 'react';
 import SearchboxHeader from './searchboxheader.jsx';
 import Logo from './Logo.jsx';
 
-var Header = React.createClass({
-
+const Header = React.createClass({
   render() {
     return (      
         <div className="navbar navbar-default navbar-fixed-top yamm" role="navigation" id="navbar">
@@ -16,7 +17,6 @@ var Header = React.createClass({
         </div>      
     );
   }
-
 });
 
-module.exports = Header;
+export default Header;

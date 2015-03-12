@@ -1,11 +1,12 @@
+'use strict';
 import React from 'react';
 
 const Item = React.createClass({
 	render(){
-		return {
-			
-		}
+		return (
+			<div />
+			);
 	}
 });
 
-export Item;
+export default Item;

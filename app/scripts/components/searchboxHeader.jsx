@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-var SearchboxHeader = React.createClass({
+const SearchboxHeader = React.createClass({
 	render(){
 		return (
     		<form className="navbar-form navbar-left navbar-input-group visible-xs visible-sm">
@@ -17,4 +17,4 @@ var SearchboxHeader = React.createClass({
 	}
 });
 
-module.exports = SearchboxHeader;
+export default SearchboxHeader;

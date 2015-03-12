@@ -1,7 +1,8 @@
+'use strict';
+
 import React from 'react';
 
-var Product = React.createClass({
-
+const Product = React.createClass({
   render() {
     return (
       <div>
@@ -14,7 +15,6 @@ var Product = React.createClass({
       </div>
     );
   }
-
 });
 
-module.exports = Product;
+export default Product;

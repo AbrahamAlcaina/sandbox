@@ -1,6 +1,8 @@
+'use strict';
+
 import React from 'react';
 
-var NotFound = React.createClass({
+const NotFound = React.createClass({
 
   render() {
     return (
@@ -13,4 +15,4 @@ var NotFound = React.createClass({
 
 });
 
-module.exports = NotFound;
+export default NotFound;

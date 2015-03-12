@@ -3,7 +3,7 @@
 import React from 'react';
 import {addons} from 'react/addons';
 
-var Logo = React.createClass({
+const Logo = React.createClass({
 	mixins: [addons.PureRenderMixin],
 	render(){
 		return (
@@ -16,4 +16,4 @@ var Logo = React.createClass({
 	}
 });
 
-module.exports = Logo;
+export default Logo;

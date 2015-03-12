@@ -1,15 +1,17 @@
+'use strict';
+
 import React from 'react';
 import ItemStore from '../stores/itemStore';
 import ItemActions from '../actions/itemActions';
 
-var ItemList = React.createClass({
+const ItemList = React.createClass({
 
   getInitialState() {
     return {
       items : [],
       loading : false,
       error : false
-    }
+    };
   },
 
   componentDidMount() {
@@ -37,8 +39,7 @@ var ItemList = React.createClass({
         </ul>
       </div>
     );
-  }
-                                     
+  }                       
 });
 
-module.exports = ItemList;
+export default ItemList;
